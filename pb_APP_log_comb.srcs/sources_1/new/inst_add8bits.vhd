@@ -2,9 +2,9 @@
 -- Company: 
 -- Engineer: 
 -- 
--- Create Date: 01/10/2024 04:23:55 PM
+-- Create Date: 01/11/2024 04:36:57 PM
 -- Design Name: 
--- Module Name: Moins5 - Behavioral
+-- Module Name: Add8bit - Behavioral
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -31,12 +31,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity Moins_5 is
-    Port ( ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
-           Moins5 : out STD_LOGIC_VECTOR (3 downto 0));
-end Moins_5;
+entity Add12bit is
+    Port ( A : in STD_LOGIC_VECTOR (11 downto 0);
+           B : in STD_LOGIC_VECTOR (11 downto 0);
+           Cin : in STD_LOGIC;
+           Cout : out STD_LOGIC;
+           Sum : out STD_LOGIC_VECTOR (11 downto 0));
+end Add12bit;
 
-architecture Behavioral of Moins_5 is
+architecture Behavioral of Add12bit is
+
+signal Carry1, Carry2: std_logic;
 
 component Add4bits is
     Port ( A_4 : in STD_LOGIC_VECTOR (3 downto 0);
@@ -45,17 +50,37 @@ component Add4bits is
            Sum_4 : out STD_LOGIC_VECTOR (3 downto 0);
            Cout_4 : out STD_LOGIC);
 end component;
- --1011 c'est notre -5 parce que 0101 est 5 et on fait complement 2
- 
+
 begin
 
-inst_Add4bits : Add4bits
-Port map(
-        A_4 => ADCbin,
-        B_4 => "1011",
-        Cin_4 => '0',
-        Sum_4 => Moins5,
-        Cout_4 => open
-        );       
+inst_Add4_1 : Add4bits
+port map
+    (
+    A_4 => A (3 downto 0),
+    B_4 => B (3 downto 0),
+    Cin_4 => '0',
+    Sum_4 => Sum (3 downto 0),
+    Cout_4 => Carry1
+    );
     
+inst_Add4_2 : Add4bits
+port map
+    (
+    A_4 => A (7 downto 4),
+    B_4 => B (7 downto 4),
+    Cin_4 => Carry1,
+    Sum_4 => Sum (7 downto 4),
+    Cout_4 => Carry2
+    );
+
+inst_Add4_3 : Add4bits
+port map
+    (
+    A_4 => A (11 downto 8),
+    B_4 => B (11 downto 8),
+    Cin_4 => Carry2,
+    Sum_4 => Sum (11 downto 8),
+    Cout_4 => Cout
+    );
+
 end Behavioral;

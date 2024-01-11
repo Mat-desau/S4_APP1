@@ -37,7 +37,50 @@ entity Fct2_3 is
 end Fct2_3;
 
 architecture Behavioral of Fct2_3 is
+
+signal D1, D3, D5, D7 : STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
+signal Sum1, Sum2 : STD_LOGIC_VECTOR (11 downto 0);
+
+
+component Add12bit is
+    Port ( A : in STD_LOGIC_VECTOR (11 downto 0);
+           B : in STD_LOGIC_VECTOR (11 downto 0);
+           Cin : in STD_LOGIC;
+           Cout : out STD_LOGIC;
+           Sum : out STD_LOGIC_VECTOR (11 downto 0));
+end component;
+
 begin
+    D1 (10 downto 7) <= ADCbin;
+    D3 (8 downto 5) <= ADCbin;
+    D5 (6 downto 3) <= ADCbin;
+    D7 (4 downto 1) <= ADCbin;
+    
+inst_add12bit_1 : Add12bit 
+port map
+    ( A => D1,
+      B => D3,
+      Cin => '0',
+      Cout => open,
+      Sum => Sum1
+    );
 
+inst_add12bit_2 : Add12bit 
+port map
+    ( A => Sum1,
+      B => D5,
+      Cin => '0',
+      Cout => open,
+      Sum => Sum2
+    );
 
+inst_add12bit_3 : Add12bit 
+port map
+    ( A => Sum2,
+      B => D7,
+      Cin => '0',
+      Cout => open,
+      Sum (10 downto 8) => A2_3
+    );
+ 
 end Behavioral;

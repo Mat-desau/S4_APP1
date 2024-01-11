@@ -36,7 +36,7 @@ entity AppCombi_top is
           o_pmodled   : out   std_logic_vector (7 downto 0)  -- vers connecteur pmod 8 DELs
           );
 end AppCombi_top;
- 
+
 architecture BEHAVIORAL of AppCombi_top is
 
    constant nbreboutons     : integer := 4;    -- Carte Zybo Z7
