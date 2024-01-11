@@ -1,0 +1,18 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+K:/APP/pb_APP_log_comb.srcs/sim_1/imports/verif/AppCombi_top_tb.vhd,1704906375,vhdl2008,,,,appcombi_top_tb,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd,1704910982,vhdl2008,,,,appcombi_top,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd,1704906375,vhdl2008,,,,septsegments_top,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd,1704906375,vhdl2008,,,,septsegments_encodeur,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd,1704906375,vhdl2008,,,,septsegments_refreshpmod,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd,1704906375,vhdl2008,,,,synchro_module_v2,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd,1704906375,vhdl,,,,fct2_3,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd,1704906375,vhdl,,,,mux,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd,1704912379,vhdl,,,,add1bit,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd,1704910517,vhdl,,,,add4bits,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd,1704906375,vhdl,,,,bin2dualbcd_ns,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd,1704906375,vhdl,,,,bin2dualbcd_s,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd,1704906375,vhdl,,,,decodeur3_8,,,,,,,,
+K:/APP/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd,1704906375,vhdl,,,,parite,,,,,,,,

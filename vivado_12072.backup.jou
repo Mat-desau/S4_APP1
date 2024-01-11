@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Wed Jan 10 14:51:36 2024
+# Process ID: 12072
+# Current directory: K:/APP
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9896 K:\APP\pb_APP_log_comb.xpr
+# Log file: K:/APP/vivado.log
+# Journal file: K:/APP\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project K:/APP/pb_APP_log_comb.xpr
+
+launch_runs impl_1 -to_step write_bitstream
+wait_on_run impl_1
+open_hw_manager
+archive_project K:/pb_APP_log_comb.xpr.zip -temp_dir K:/APP/.Xil/Vivado-17828-gegi-3024-09win -force -include_local_ip_cache
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {K:/APP/pb_APP_log_comb.runs/impl_1/AppCombi_top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {K:/APP/pb_APP_log_comb.runs/impl_1/AppCombi_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {K:/APP/pb_APP_log_comb.runs/impl_1/AppCombi_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+archive_project K:/pb_APP_log_comb.xpr.zip -temp_dir K:/APP/.Xil/Vivado-17828-gegi-3024-09win -force -include_local_ip_cache
+archive_project K:/pb_APP_log_comb.xpr.zip -temp_dir K:/APP/.Xil/Vivado-17828-gegi-3024-09win -force -include_local_ip_cache

@@ -1,0 +1,23 @@
+# compile vhdl design source files
+vhdl2008 xil_defaultlib  \
+"../../../../pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd" \
+
+vhdl xil_defaultlib  \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd" \
+
+vhdl2008 xil_defaultlib  \
+"../../../../pb_APP_log_comb.srcs/sim_1/imports/verif/AppCombi_top_tb.vhd" \
+
+# Do not sort compile order
+nosort

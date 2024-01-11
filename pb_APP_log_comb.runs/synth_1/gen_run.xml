@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1704927609">
+  <File Type="PA-TCL" Name="AppCombi_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AppCombi_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="AppCombi_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="AppCombi_top.vds"/>
+  <File Type="RDS-UTIL" Name="AppCombi_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="AppCombi_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="AppCombi_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AppCombi_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AppCombi_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/src/septSegments_encodeur.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/septSegments_encodeur.vhd"/>
+        <Attr Name="ImportTime" Val="1635539909"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/septSegments_refreshPmod.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/septSegments_refreshPmod.vhd"/>
+        <Attr Name="ImportTime" Val="1651164618"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/septSegments_Top.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/septSegments_Top.vhd"/>
+        <Attr Name="ImportTime" Val="1651164797"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/synchro_module_v2.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/synchro_module_v2.vhd"/>
+        <Attr Name="ImportTime" Val="1635539909"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/src/AppCombi_top.vhd">
+      <FileInfo SFType="VHDL2008">
+        <Attr Name="ImportPath" Val="$PPRDIR/../src/AppCombi_top.vhd"/>
+        <Attr Name="ImportTime" Val="1651163486"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_deco.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_2_3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_parite.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_MUX.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_bin_ns.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_bin_s.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_add.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_add_4bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_moins5.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_Bin2DualBCD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="AppCombi_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/contraintes/AppCombi_top.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../contraintes/AppCombi_top.xdc"/>
+        <Attr Name="ImportTime" Val="1641412072"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2020"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
