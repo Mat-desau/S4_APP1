@@ -131,6 +131,7 @@ begin
     
     
     --À FAIRE
+    -- LABORATOIRE
 --    inst_add : Add4bits
 --    port map(   A_4 => d_opa,
 --                B_4 => d_opb,
