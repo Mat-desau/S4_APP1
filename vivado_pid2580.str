@@ -1,0 +1,128 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 2580
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jan 11 15:30:13 EST 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Félix
+User home directory: C:/Users/Félix
+User working directory: C:/Users/Félix/Documents/GitHub/S4_APP1
+User country: 	CA
+User language: 	fr
+User locale: 	fr_CA
+
+RDI_BASEROOT: D:/xilinx/Vivado
+HDI_APPROOT: D:/xilinx/Vivado/2020.2
+RDI_DATADIR: D:/xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Félix/Documents/GitHub/S4_APP1/vivado.log
+Vivado journal file location: 	C:/Users/Félix/Documents/GitHub/S4_APP1/vivado.jou
+Engine tmp dir: 	C:/Users/Félix/Documents/GitHub/S4_APP1/.Xil/Vivado-2580-DESKTOP-9AUGKDP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/xilinx/Vivado/2020.2
+XILINX_SDK: D:/xilinx/Vitis/2020.2
+XILINX_VITIS: D:/xilinx/Vitis/2020.2
+XILINX_VIVADO: D:/xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,080 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 100 MB (+102078kb) [00:00:13]
+// [Engine Memory]: 1,080 MB (+981146kb) [00:00:13]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Félix\Documents\GitHub\S4_APP1\pb_APP_log_comb.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,080 MB. GUI used memory: 52 MB. Current time: 1/11/24, 3:30:14 PM EST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/UNIVERSITE/S4/APP1/APP' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 108 MB (+2989kb) [00:00:41]
+// WARNING: HEventQueue.dispatchEvent() is taking  3711 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'. 
+// Project name: pb_APP_log_comb; location: C:/Users/Félix/Documents/GitHub/S4_APP1; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:29 . Memory (MB): peak = 1117.512 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 116 MB (+3410kb) [00:00:51]
+// [GUI Memory]: 130 MB (+8592kb) [00:00:54]
+// PAPropertyPanels.initPanels (inst_2_3.vhd) elapsed time: 0.2s
+// Elapsed time: 21 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fct2_3(Behavioral) (inst_2_3.vhd)]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fct2_3(Behavioral) (inst_2_3.vhd)]", 2, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Fct2_3(Behavioral) (inst_2_3.vhd)]", 2, false); // D
+selectCodeEditor("inst_2_3.vhd", 53, 193); // bP
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // E
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
