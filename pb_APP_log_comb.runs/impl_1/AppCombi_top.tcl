@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.runs/impl_1/AppCombi_top.tcl"
+  variable script "C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/AppCombi_top.tcl"
   variable category "vivado_impl"
 }
 
@@ -122,7 +122,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 3
   set_param xicom.use_bs_reader 1
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7z010clg400-1
@@ -131,15 +131,15 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.cache/wt [current_project]
-  set_property parent.project_path D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.xpr [current_project]
+  set_property webtalk.parent_dir C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr [current_project]
   set_property ip_output_repo D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.runs/synth_1/AppCombi_top.dcp
+  add_files -quiet C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/AppCombi_top.dcp
 OPTRACE "read constraints: implementation" START { }
-  read_xdc D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc
+  read_xdc C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }

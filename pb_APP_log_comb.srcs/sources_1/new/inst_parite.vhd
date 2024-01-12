@@ -38,7 +38,9 @@ entity Parite is
 end Parite;
 
 architecture Behavioral of Parite is
+
     signal parite_temp : STD_LOGIC;
+    
 begin
     process(S1, ADCbin)
     begin

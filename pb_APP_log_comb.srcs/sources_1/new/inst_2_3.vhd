@@ -39,7 +39,8 @@ end Fct2_3;
 architecture Behavioral of Fct2_3 is
 
 signal D1, D3, D5, D7 : STD_LOGIC_VECTOR (11 downto 0) := (others => '0');
-signal Sum1, Sum2 : STD_LOGIC_VECTOR (11 downto 0);
+signal Sum1, Sum2, SumFinale : STD_LOGIC_VECTOR (11 downto 0);
+
 
 
 component Add12bit is
@@ -80,7 +81,9 @@ port map
       B => D7,
       Cin => '0',
       Cout => open,
-      Sum (10 downto 8) => A2_3
+      Sum => SumFinale
     );
+ 
+ A2_3 <= SumFinale (10 downto 8) ;
  
 end Behavioral;

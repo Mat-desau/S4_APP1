@@ -2,11 +2,11 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Wed Jan 10 18:00:12 2024
-# Process ID: 3412
-# Current directory: D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.runs/synth_1
+# Start of session at: Thu Jan 11 20:41:20 2024
+# Process ID: 1608
+# Current directory: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1
 # Command line: vivado.exe -log AppCombi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AppCombi_top.tcl
-# Log file: D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.runs/synth_1/AppCombi_top.vds
-# Journal file: D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.runs/synth_1\vivado.jou
+# Log file: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/AppCombi_top.vds
+# Journal file: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source AppCombi_top.tcl -notrace

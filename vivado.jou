@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jan 11 15:29:15 2024
-# Process ID: 2580
+# Start of session at: Thu Jan 11 20:42:55 2024
+# Process ID: 10744
 # Current directory: C:/Users/Félix/Documents/GitHub/S4_APP1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10680 C:\Users\Félix\Documents\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3712 C:\Users\Félix\Documents\GitHub\S4_APP1\pb_APP_log_comb.xpr
 # Log file: C:/Users/Félix/Documents/GitHub/S4_APP1/vivado.log
 # Journal file: C:/Users/Félix/Documents/GitHub/S4_APP1\vivado.jou
 #-----------------------------------------------------------

@@ -47,6 +47,25 @@ end MUX;
 architecture Behavioral of MUX is
 
 begin
-
+    process (Dizaine, Unites_ns, Code_signe, Unites_s, ADCbin, erreur, BTN, S2)
+        begin
+            case BTN is
+             when "00" => DAFF1 <= Dizaine ; DAFF0 <= Unites_ns;
+             when "01" => DAFF1 <= "0000" ; DAFF0 <= ADCbin;
+             when "10" => DAFF1 <= Code_signe ; DAFF0 <= Unites_s;
+             when "11" => DAFF1 <= "1110" ; DAFF0 <= "1111";
+             when others => DAFF1 <= "0000" ; DAFF0 <= "0000";   
+            end case;
+            
+            if S2 = '1' or erreur = '1' then
+             DAFF1 <= "1110" ; 
+             DAFF0 <= "1111";
+            end if;
+            
+            
+            
+            
+             
+        end process;
 
 end Behavioral;

@@ -27,9 +27,12 @@ use UNISIM.Vcomponents.ALL;
 
 entity AppCombi_top is
   port ( 
+          i_S1        : in    std_logic;
+          i_S2        : in    std_logic;
           i_btn       : in    std_logic_vector (3 downto 0); -- Boutons de la carte Zybo
           i_sw        : in    std_logic_vector (3 downto 0); -- Interrupteurs de la carte Zybo
           sysclk      : in    std_logic;                     -- horloge systeme
+          o_DEL2      : out   std_logic;
           o_SSD       : out   std_logic_vector (7 downto 0); -- vers cnnecteur pmod afficheur 7 segments
           o_led       : out   std_logic_vector (3 downto 0); -- vers DELs de la carte Zybo
           o_led6_r    : out   std_logic;                     -- vers DEL rouge de la carte Zybo
@@ -47,13 +50,20 @@ architecture BEHAVIORAL of AppCombi_top is
    --
    signal d_opa             : std_logic_vector (3 downto 0):= "0000";   -- operande A
    signal d_opb             : std_logic_vector (3 downto 0):= "0000";   -- operande B
-   signal d_cin             : std_logic := '0';                         -- retenue entree
-   signal d_sum             : std_logic_vector (3 downto 0):= "0000";   -- somme
-   signal d_cout            : std_logic := '0';                         -- retenue sortie
+   -- signal d_cin             : std_logic := '0';                         -- retenue entree
+   -- signal d_sum             : std_logic_vector (3 downto 0):= "0000";   -- somme
+   -- signal d_cout            : std_logic := '0';                         -- retenue sortie
    --
    signal d_AFF0            : std_logic_vector (3 downto 0):= "0000";
    signal d_AFF1            : std_logic_vector (3 downto 0):= "0000";
  
+   signal a2_3              : std_logic_vector (2 downto 0);
+   
+   signal dizaine           : std_logic_vector (3 downto 0);
+   signal unites_ns         : std_logic_vector (3 downto 0);
+   signal code_signe        : std_logic_vector (3 downto 0);
+   signal unites_s          : std_logic_vector (3 downto 0);
+   signal erreur            : std_logic;
    
    component synchro_module_v2 is
    generic (const_CLK_syst_MHz: integer := freq_sys_MHz);
@@ -109,6 +119,19 @@ architecture BEHAVIORAL of AppCombi_top is
            Unite_s : out STD_LOGIC_VECTOR (3 downto 0));
     end component;
     
+    component MUX is
+       Port ( Dizaine : in STD_LOGIC_VECTOR (3 downto 0);
+           Unites_ns : in STD_LOGIC_VECTOR (3 downto 0);
+           Code_signe : in STD_LOGIC_VECTOR (3 downto 0);
+           Unites_s : in STD_LOGIC_VECTOR (3 downto 0);
+           ADCbin : in STD_LOGIC_VECTOR (3 downto 0);
+           erreur : in STD_LOGIC;
+           BTN : in STD_LOGIC_VECTOR (1 downto 0);
+           S2 : in STD_LOGIC;
+           DAFF0 : out STD_LOGIC_VECTOR (3 downto 0);
+           DAFF1 : out STD_LOGIC_VECTOR (3 downto 0));
+    end component;
+    
 begin
   
     inst_synch : synchro_module_v2
@@ -129,41 +152,58 @@ begin
            o_AFFSSD       => o_SSD   -- sorties directement adaptees au connecteur PmodSSD
        );
     
-    
-    --À FAIRE
---    inst_add : Add4bits
---    port map(   A_4 => d_opa,
---                B_4 => d_opb,
---                Cin_4 => '0',
---                Sum_4 => d_sum,
---                Cout_4 => d_cout
---             );
-    
     inst_Bin2DualBCD : Bin2DualBCD
         Port map(
                 ADCbin => d_opa,
-                Dizaines => open,
-                Unites_ns => open,
-                Code_signe => d_AFF1,
-                Unite_s => d_AFF0
+                Dizaines => dizaine,
+                Unites_ns => unites_ns,
+                Code_signe => code_Signe,
+                Unite_s => unites_s
                 );
     
-   -- inst_deco : decodeur3_8;
-    
-   -- inst_2_3 : Fct2_3;
-    
-    -- inst_parite : Parite;
-             
+   inst_deco : decodeur3_8
+        Port map(
+                A2_3 => a2_3,
+                LED => o_pmodled
+                );
+                
+   inst_2_3 : Fct2_3
+        Port map(
+                ADCbin => d_opa,
+                A2_3 => a2_3
+                );   
+                 
+   inst_parite : Parite
+        Port map(
+                S1 => i_S1,
+                ADCbin => d_opa,
+                parite => o_DEL2
+                ); 
+                 
+   inst_mux : MUX 
+        Port map(
+                 Dizaine => dizaine,
+                 Unites_ns => unites_ns,
+                 Code_signe => code_signe,
+                 Unites_s => unites_s,
+                 ADCbin => d_opa,
+                 erreur => erreur,
+                 BTN => i_btn(1 downto 0),
+                 S2 => i_S2,
+                 DAFF0 => d_AFF0, 
+                 DAFF1 => d_AFF1
+                );  
+                        
    d_opa               <=  i_sw;                        -- operande A sur interrupteurs
    d_opb               <=  i_btn;                       -- operande B sur boutons
-   d_cin               <=  '0';                     -- la retenue d'entrée alterne 0 1 a 1 Hz
+   -- d_cin               <=  '0';                     -- la retenue d'entrée alterne 0 1 a 1 Hz
       
-   --d_AFF0              <=  d_sum(3 downto 0);           -- Le resultat de votre additionneur affiché sur PmodSSD(0)
-   --d_AFF1              <=  '0' & '0' & '0' & d_Cout;    -- La retenue de sortie affichée sur PmodSSD(1) (0 ou 1)
-   o_led6_r            <=  d_Cout;                      -- La led couleur représente aussi la retenue en sortie  Cout
-   o_pmodled           <=  d_opa & d_opb;               -- Les opérandes d'entrés reproduits combinés sur Pmod8LD
-   o_led (3 downto 0)  <=  '0' & '0' & '0' & d_S_1Hz;   -- La LED0 sur la carte représente la retenue d'entrée        
-   
+   -- d_AFF0              <=  d_sum(3 downto 0);           -- Le resultat de votre additionneur affiché sur PmodSSD(0)
+   -- d_AFF1              <=  '0' & '0' & '0' & d_Cout;    -- La retenue de sortie affichée sur PmodSSD(1) (0 ou 1)
+   -- o_led6_r            <=  d_Cout;                      -- La led couleur représente aussi la retenue en sortie  Cout
+   -- o_pmodled           <=  d_opa & d_opb;               -- Les opérandes d'entrés reproduits combinés sur Pmod8LD
+   -- o_led (3 downto 0)  <=  '0' & '0' & '0' & d_S_1Hz;   -- La LED0 sur la carte représente la retenue d'entrée        
+   o_led(0) <= o_DEL2;
    
 end BEHAVIORAL;
 

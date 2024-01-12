@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1704927609">
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1705023678">
   <File Type="BITSTR-BMM" Name="AppCombi_top_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="AppCombi_top_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="AppCombi_top_timing_summary_init.rpt"/>
@@ -123,12 +123,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/inst_2_3.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/inst_parite.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -172,6 +166,24 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/inst_Bin2DualBCD.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_12bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_add8bits.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_2_3.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>

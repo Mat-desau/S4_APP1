@@ -17,250 +17,82 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 10280
+INFO: [Synth 8-7075] Helper process launched with PID 11740
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1144.273 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1146.145 ; gain = 0.000
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'AppCombi_top' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:40]
+INFO: [Synth 8-638] synthesizing module 'AppCombi_top' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:43]
 	Parameter const_CLK_syst_MHz bound to: 125 - type: integer 
-INFO: [Synth 8-3491] module 'synchro_module_v2' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:40' bound to instance 'inst_synch' of component 'synchro_module_v2' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:114]
-INFO: [Synth 8-638] synthesizing module 'synchro_module_v2' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:49]
+INFO: [Synth 8-3491] module 'synchro_module_v2' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:40' bound to instance 'inst_synch' of component 'synchro_module_v2' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:137]
+INFO: [Synth 8-638] synthesizing module 'synchro_module_v2' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:49]
 	Parameter const_CLK_syst_MHz bound to: 125 - type: integer 
-INFO: [Synth 8-113] binding component instance 'ClockBuffer' to cell 'BUFG' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:85]
-INFO: [Synth 8-256] done synthesizing module 'synchro_module_v2' (1#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:49]
-INFO: [Synth 8-3491] module 'septSegments_Top' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:46' bound to instance 'inst_aff' of component 'septSegments_Top' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:122]
-INFO: [Synth 8-638] synthesizing module 'septSegments_Top' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:56]
+INFO: [Synth 8-113] binding component instance 'ClockBuffer' to cell 'BUFG' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'synchro_module_v2' (1#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd:49]
+INFO: [Synth 8-3491] module 'septSegments_Top' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:46' bound to instance 'inst_aff' of component 'septSegments_Top' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:145]
+INFO: [Synth 8-638] synthesizing module 'septSegments_Top' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:56]
 	Parameter const_CLK_MHz bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'septSegments_encodeur' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:44' bound to instance 'inst_segm_lsb' of component 'septSegments_encodeur' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:83]
-INFO: [Synth 8-638] synthesizing module 'septSegments_encodeur' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:52]
-INFO: [Synth 8-226] default block is never used [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:93]
-INFO: [Synth 8-256] done synthesizing module 'septSegments_encodeur' (2#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:52]
-INFO: [Synth 8-3491] module 'septSegments_encodeur' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:44' bound to instance 'inst_segm_msb' of component 'septSegments_encodeur' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:90]
+INFO: [Synth 8-3491] module 'septSegments_encodeur' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:44' bound to instance 'inst_segm_lsb' of component 'septSegments_encodeur' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:83]
+INFO: [Synth 8-638] synthesizing module 'septSegments_encodeur' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:52]
+INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:93]
+INFO: [Synth 8-256] done synthesizing module 'septSegments_encodeur' (2#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:52]
+INFO: [Synth 8-3491] module 'septSegments_encodeur' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd:44' bound to instance 'inst_segm_msb' of component 'septSegments_encodeur' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:90]
 	Parameter const_CLK_MHz bound to: 100 - type: integer 
-INFO: [Synth 8-3491] module 'septSegments_refreshPmod' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:19' bound to instance 'inst_refresh' of component 'septSegments_refreshPmod' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'septSegments_refreshPmod' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:29]
+INFO: [Synth 8-3491] module 'septSegments_refreshPmod' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:19' bound to instance 'inst_refresh' of component 'septSegments_refreshPmod' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:97]
+INFO: [Synth 8-638] synthesizing module 'septSegments_refreshPmod' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:29]
 	Parameter const_CLK_MHz bound to: 100 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'septSegments_refreshPmod' (3#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:29]
-INFO: [Synth 8-256] done synthesizing module 'septSegments_Top' (4#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:56]
-INFO: [Synth 8-3491] module 'Bin2DualBCD' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:34' bound to instance 'inst_Bin2DualBCD' of component 'Bin2DualBCD' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:142]
-INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:42]
-INFO: [Synth 8-3491] module 'Bin2DualBCD_NS' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:34' bound to instance 'inst_Bin2DualBCD_NS' of component 'Bin2DualBCD_NS' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD_NS' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:40]
-INFO: [Synth 8-226] default block is never used [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD_NS' (5#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:40]
-INFO: [Synth 8-3491] module 'Bin2DualBCD_S' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:34' bound to instance 'inst_Bin2DualBCD_S' of component 'Bin2DualBCD_S' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD_S' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:40]
-INFO: [Synth 8-226] default block is never used [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:45]
-INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD_S' (6#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:40]
-INFO: [Synth 8-3491] module 'Moins_5' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:34' bound to instance 'inst_Moins_5' of component 'Moins_5' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:79]
-INFO: [Synth 8-638] synthesizing module 'Moins_5' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:39]
-INFO: [Synth 8-3491] module 'Add4bits' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:34' bound to instance 'inst_moins_5' of component 'Add4bits' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:52]
-INFO: [Synth 8-638] synthesizing module 'Add4bits' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:42]
-INFO: [Synth 8-3491] module 'Add1bit' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addA' of component 'Add1bit' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:57]
-INFO: [Synth 8-638] synthesizing module 'Add1bit' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Add1bit' (7#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:42]
-INFO: [Synth 8-3491] module 'Add1bit' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addB' of component 'Add1bit' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:66]
-INFO: [Synth 8-3491] module 'Add1bit' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addC' of component 'Add1bit' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:75]
-INFO: [Synth 8-3491] module 'Add1bit' declared at 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addD' of component 'Add1bit' [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:84]
-INFO: [Synth 8-256] done synthesizing module 'Add4bits' (8#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'Moins_5' (9#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD' (10#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:42]
-INFO: [Synth 8-256] done synthesizing module 'AppCombi_top' (11#1) [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:40]
----------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1195.352 ; gain = 51.078
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1195.352 ; gain = 51.078
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1195.352 ; gain = 51.078
----------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1195.352 ; gain = 0.000
-INFO: [Project 1-570] Preparing netlist for logic optimization
-
-Processing XDC Constraints
-Initializing timing engine
-Parsing XDC File [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]
-Finished Parsing XDC File [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/AppCombi_top_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/AppCombi_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Completed Processing XDC Constraints
-
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1299.113 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1299.113 ; gain = 0.000
----------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1299.113 ; gain = 154.840
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Loading Part and Timing Information
----------------------------------------------------------------------------------
-Loading part: xc7z010clg400-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1299.113 ; gain = 154.840
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying 'set_property' XDC Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1299.113 ; gain = 154.840
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1299.113 ; gain = 154.840
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start RTL Component Statistics 
----------------------------------------------------------------------------------
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input    8 Bit       Adders := 1     
-	   2 Input    5 Bit       Adders := 2     
-+---XORs : 
-	   3 Input      1 Bit         XORs := 4     
-+---Registers : 
-	                8 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
-	                5 Bit    Registers := 2     
-	                1 Bit    Registers := 3     
-+---Muxes : 
-	  16 Input    7 Bit        Muxes := 2     
-	   2 Input    7 Bit        Muxes := 1     
-	  16 Input    1 Bit        Muxes := 1     
----------------------------------------------------------------------------------
-Finished RTL Component Statistics 
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Part Resource Summary
----------------------------------------------------------------------------------
-Part Resources:
-DSPs: 80 (col length:40)
-BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
----------------------------------------------------------------------------------
-Finished Part Resource Summary
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Cross Boundary and Area Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1299.113 ; gain = 154.840
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Applying XDC Timing Constraints
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1299.113 ; gain = 154.840
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Timing Optimization
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1304.438 ; gain = 160.164
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Technology Mapping
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1305.242 ; gain = 160.969
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Flattening Before IO Insertion
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Final Netlist Cleanup
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Instances
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Rebuilding User Hierarchy
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Ports
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Handling Custom Attributes
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Renaming Generated Nets
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start Writing Synthesis Report
----------------------------------------------------------------------------------
-
-Report BlackBoxes: 
-+-+--------------+----------+
-| |BlackBox name |Instances |
-+-+--------------+----------+
-+-+--------------+----------+
-
-Report Cell Usage: 
-+------+-------+------+
-|      |Cell   |Count |
-+------+-------+------+
-|1     |BUFG   |     2|
-|2     |CARRY4 |     8|
-|3     |LUT1   |     5|
-|4     |LUT2   |     5|
-|5     |LUT3   |     3|
-|6     |LUT4   |     4|
-|7     |LUT5   |    15|
-|8     |LUT6   |    12|
-|9     |FDRE   |    60|
-|10    |IBUF   |     9|
-|11    |OBUF   |    21|
-+------+-------+------+
----------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
----------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:19 . Memory (MB): peak = 1312.023 ; gain = 63.988
-Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1312.023 ; gain = 167.750
-INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1312.023 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-INFO: [Project 1-570] Preparing netlist for logic optimization
-INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1327.082 ; gain = 0.000
-INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
-
-INFO: [Common 17-83] Releasing license: Synthesis
-55 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
-synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1327.082 ; gain = 182.809
-INFO: [Common 17-1381] The checkpoint 'D:/UNIVERSITE/S4/APP1/APP/pb_APP_log_comb.runs/synth_1/AppCombi_top.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file AppCombi_top_utilization_synth.rpt -pb AppCombi_top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Jan 10 18:00:43 2024...
+INFO: [Synth 8-256] done synthesizing module 'septSegments_refreshPmod' (3#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'septSegments_Top' (4#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd:56]
+INFO: [Synth 8-3491] module 'Bin2DualBCD' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:34' bound to instance 'inst_Bin2DualBCD' of component 'Bin2DualBCD' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:155]
+INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:42]
+INFO: [Synth 8-3491] module 'Bin2DualBCD_NS' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:34' bound to instance 'inst_Bin2DualBCD_NS' of component 'Bin2DualBCD_NS' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD_NS' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:40]
+INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD_NS' (5#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd:40]
+INFO: [Synth 8-3491] module 'Bin2DualBCD_S' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:34' bound to instance 'inst_Bin2DualBCD_S' of component 'Bin2DualBCD_S' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'Bin2DualBCD_S' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:40]
+INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD_S' (6#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd:40]
+INFO: [Synth 8-3491] module 'Moins_5' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:34' bound to instance 'inst_Moins_5' of component 'Moins_5' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:79]
+INFO: [Synth 8-638] synthesizing module 'Moins_5' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:39]
+INFO: [Synth 8-3491] module 'Add4bits' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:34' bound to instance 'inst_Add4bits' of component 'Add4bits' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'Add4bits' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:42]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addA' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Add1bit' (7#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:42]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addB' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:66]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addC' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:75]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addD' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'Add4bits' (8#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'Moins_5' (9#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'Bin2DualBCD' (10#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd:42]
+INFO: [Synth 8-3491] module 'decodeur3_8' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd:34' bound to instance 'inst_deco' of component 'decodeur3_8' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:164]
+INFO: [Synth 8-638] synthesizing module 'decodeur3_8' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'decodeur3_8' (11#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd:39]
+INFO: [Synth 8-3491] module 'Fct2_3' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:34' bound to instance 'inst_2_3' of component 'Fct2_3' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:170]
+INFO: [Synth 8-638] synthesizing module 'Fct2_3' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:39]
+INFO: [Synth 8-3491] module 'Add12bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:34' bound to instance 'inst_add12bit_1' of component 'Add12bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'Add12bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:42]
+INFO: [Synth 8-3491] module 'Add4bits' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:34' bound to instance 'inst_Add4_1' of component 'Add4bits' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'Add4bits__parameterized1' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:42]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addA' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:57]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addB' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:66]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addC' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:75]
+INFO: [Synth 8-3491] module 'Add1bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd:34' bound to instance 'inst_addD' of component 'Add1bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:84]
+INFO: [Synth 8-256] done synthesizing module 'Add4bits__parameterized1' (11#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:42]
+INFO: [Synth 8-3491] module 'Add4bits' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:34' bound to instance 'inst_Add4_2' of component 'Add4bits' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:66]
+INFO: [Synth 8-3491] module 'Add4bits' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd:34' bound to instance 'inst_Add4_3' of component 'Add4bits' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:76]
+INFO: [Synth 8-256] done synthesizing module 'Add12bit' (12#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:42]
+INFO: [Synth 8-3491] module 'Add12bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:34' bound to instance 'inst_add12bit_2' of component 'Add12bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:69]
+INFO: [Synth 8-3491] module 'Add12bit' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd:34' bound to instance 'inst_add12bit_3' of component 'Add12bit' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:78]
+INFO: [Synth 8-256] done synthesizing module 'Fct2_3' (13#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:39]
+INFO: [Synth 8-3491] module 'Parite' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:34' bound to instance 'inst_parite' of component 'Parite' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:176]
+INFO: [Synth 8-638] synthesizing module 'Parite' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:40]
+INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:45]
+WARNING: [Synth 8-614] signal 'parite_temp' is read in the process but is not in the sensitivity list [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:43]
+INFO: [Synth 8-256] done synthesizing module 'Parite' (14#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:40]
+INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd:34' bound to instance 'inst_mux' of component 'MUX' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd:47]
+INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd:52]
+INFO: [Synth 8-256] done synthesizing module 'MUX' (15#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd:47]
+INFO: [Synth 8-256] done synthesizing module 'AppCombi_top' (16#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:43]
+TclStackFree: incorrect freePtr. Call out of sequence?
