@@ -1,0 +1,267 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 10744
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Thu Jan 11 20:43:12 EST 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Félix
+User home directory: C:/Users/Félix
+User working directory: C:/Users/Félix/Documents/GitHub/S4_APP1
+User country: 	CA
+User language: 	fr
+User locale: 	fr_CA
+
+RDI_BASEROOT: D:/xilinx/Vivado
+HDI_APPROOT: D:/xilinx/Vivado/2020.2
+RDI_DATADIR: D:/xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Félix/Documents/GitHub/S4_APP1/vivado.log
+Vivado journal file location: 	C:/Users/Félix/Documents/GitHub/S4_APP1/vivado.jou
+Engine tmp dir: 	C:/Users/Félix/Documents/GitHub/S4_APP1/.Xil/Vivado-10744-DESKTOP-9AUGKDP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/xilinx/Vivado/2020.2
+XILINX_SDK: D:/xilinx/Vitis/2020.2
+XILINX_VITIS: D:/xilinx/Vitis/2020.2
+XILINX_VIVADO: D:/xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	132 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,147 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// TclEventType: PROJECT_OPEN_DIALOG
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 101 MB (+103565kb) [00:00:05]
+// [Engine Memory]: 1,147 MB (+1050835kb) [00:00:05]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Félix\Documents\GitHub\S4_APP1\pb_APP_log_comb.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 111 MB (+4874kb) [00:00:09]
+// WARNING: HEventQueue.dispatchEvent() is taking  1742 ms.
+// WARNING: HTimer (HSTRUtils Dump STR Log Timer) is taking 998ms to process. Increasing delay to 5000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1001 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,147 MB. GUI used memory: 57 MB. Current time: 1/11/24, 8:43:13 PM EST
+// Tcl Message: open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1144.914 ; gain = 0.000 
+// Project name: pb_APP_log_comb; location: C:/Users/Félix/Documents/GitHub/S4_APP1; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 122 MB (+5658kb) [00:00:16]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a
+// [GUI Memory]: 131 MB (+2880kb) [00:00:24]
+dismissDialog("No Implementation Results Available"); // A
+collapseTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Jan 11 20:41:25 EST 2024 ; 00:00:11 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xc7z010clg400-1 ; Vivado Synthesis Defaults", 0); // az
+expandTreeTable(PAResourceEtoH.ExpRunTreePanel_EXP_RUN_TREE_TABLE, "synth_1 ; constrs_1 ; Synthesis Out-of-date ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ;  ; Thu Jan 11 20:41:25 EST 2024 ; 00:00:11 ; Vivado Synthesis Defaults (Vivado Synthesis 2020) ; Vivado Synthesis Default Reports (Vivado Synthesis 2020) ; xc7z010clg400-1 ; Vivado Synthesis Defaults", 0); // az
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_1 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// cD (cr): Launch Runs: addNotify
+selectComboBox(PAResourceItoN.NumJobsChooser_NUMBER_OF_JOBS, "12", 11); // e
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 4 seconds
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_STATUS_CHANGE
+// bz (cr):  Generate Bitstream : addNotify
+// Tcl Message: [Thu Jan 11 20:43:33 2024] Launched synth_1... Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log [Thu Jan 11 20:43:34 2024] Launched impl_1... Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/runme.log 
+dismissDialog("Generate Bitstream"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 2, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 5); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, inst_12bits.vhd]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, inst_12bits.vhd]", 2, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files, inst_12bits.vhd]", 2, false, false, false, false, false, true); // D - Double Click
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // F
+// ag (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g: TRUE
+// Elapsed time: 23 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 3, true); // ah - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'parite_temp' is read in the process but is not in the sensitivity list [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:45]. ]", 4, false); // ah
+// Elapsed time: 14 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 1); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 2, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 2); // D
+// Elapsed time: 13 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// f (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// bz (cr):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 12 
+// Tcl Message: [Thu Jan 11 20:44:54 2024] Launched synth_1... Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bz
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+// Elapsed time: 25 seconds
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", false); // g: FALSE
+selectCheckBox(PAResourceCommand.PACommandNames_MESSAGE_WINDOW, "View Messages", true); // g: TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, true); // g: TRUE
+selectButton(RDIResource.HFilterToolBar_SHOW_ALL, "Show All"); // a
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, [Synth 8-614] signal 'parite_temp' is read in the process but is not in the sensitivity list [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:45]. ]", 19, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.gen/sources_1'.. ]", 2, false); // ah
+// Elapsed time: 27 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.gen/sources_1'.. ]", 2, false); // ah
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, General Messages, [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.gen/sources_1'.. ]", 2, false, false, false, false, false, true); // ah - Double Click
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, RTL Analysis, Open Elaborated Design]", 12); // u
+// [GUI Memory]: 140 MB (+3294kb) [00:03:07]
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u - Node
+collapseTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 20); // u
+expandTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Open Hardware Manager]", 20); // u
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 19, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_NO, "No"); // a
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("No Implementation Results Available"); // A
+// Elapsed time: 20 seconds
+selectButton(PAResourceCommand.PACommandNames_SYNTH_SETTINGS, "Vivado Synthesis Defaults"); // h
+// Run Command: PAResourceCommand.PACommandNames_SYNTH_SETTINGS
+// d (cr): Settings: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Settings"); // d
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 19, false); // u
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cr): No Implementation Results Available: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a
+// bz (cr):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("No Implementation Results Available"); // A
+// TclEventType: RUN_RESET
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// cD (cr): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// 'cA' command handler elapsed time: 3 seconds
+dismissDialog("Launch Runs"); // cD
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream -jobs 12 
+// Tcl Message: [Thu Jan 11 20:46:47 2024] Launched synth_1... Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log [Thu Jan 11 20:46:47 2024] Launched impl_1... Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/runme.log 
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_STEP_COMPLETED
+// ag (cr): Synthesis Failed: addNotify
+// TclEventType: RUN_STATUS_CHANGE
+// Elapsed time: 27 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Synthesis Failed"); // ag
+selectButton(RDIResource.HFilterToolBar_SHOW_ALL, "Show All"); // a
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis,  Command: synth_design -top AppCombi_top -part xc7z010clg400-1. ]", 8); // ah

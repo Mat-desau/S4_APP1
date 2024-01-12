@@ -2,8 +2,8 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Thu Jan 11 20:41:20 2024
-# Process ID: 1608
+# Start of session at: Thu Jan 11 20:46:49 2024
+# Process ID: 15124
 # Current directory: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1
 # Command line: vivado.exe -log AppCombi_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source AppCombi_top.tcl
 # Log file: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/AppCombi_top.vds
@@ -17,9 +17,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010
 INFO: [Device 21-403] Loading part xc7z010clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 11740
+INFO: [Synth 8-7075] Helper process launched with PID 5884
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1146.145 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1144.621 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'AppCombi_top' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:43]
 	Parameter const_CLK_syst_MHz bound to: 125 - type: integer 
@@ -87,8 +87,8 @@ INFO: [Synth 8-3491] module 'Add12bit' declared at 'C:/Users/Félix/Documents/Git
 INFO: [Synth 8-256] done synthesizing module 'Fct2_3' (13#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd:39]
 INFO: [Synth 8-3491] module 'Parite' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:34' bound to instance 'inst_parite' of component 'Parite' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:176]
 INFO: [Synth 8-638] synthesizing module 'Parite' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:40]
-INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:45]
-WARNING: [Synth 8-614] signal 'parite_temp' is read in the process but is not in the sensitivity list [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:43]
+INFO: [Synth 8-226] default block is never used [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:47]
+WARNING: [Synth 8-614] signal 'parite_temp' is read in the process but is not in the sensitivity list [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:45]
 INFO: [Synth 8-256] done synthesizing module 'Parite' (14#1) [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd:40]
 INFO: [Synth 8-3491] module 'MUX' declared at 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd:34' bound to instance 'inst_mux' of component 'MUX' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd:183]
 INFO: [Synth 8-638] synthesizing module 'MUX' [C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd:47]
