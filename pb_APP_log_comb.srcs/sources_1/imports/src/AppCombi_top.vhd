@@ -83,7 +83,6 @@ architecture BEHAVIORAL of AppCombi_top is
            );
    end component;
    
-   --À FAIRE
    component decodeur3_8 is
    Port (   A2_3          : in  STD_LOGIC_VECTOR (2 downto 0);
             LED           : out STD_LOGIC_VECTOR (7 downto 0)
@@ -192,7 +191,7 @@ begin
                  S2 => i_S2,
                  DAFF0 => d_AFF0, 
                  DAFF1 => d_AFF1
-                );  
+                ); 
                         
    d_opa               <=  i_sw;                        -- operande A sur interrupteurs
    d_opb               <=  i_btn;                       -- operande B sur boutons

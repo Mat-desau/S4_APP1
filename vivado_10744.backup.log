@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Jan 11 20:42:55 2024
+# Process ID: 10744
+# Current directory: C:/Users/Félix/Documents/GitHub/S4_APP1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3712 C:\Users\Félix\Documents\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Log file: C:/Users/Félix/Documents/GitHub/S4_APP1/vivado.log
+# Journal file: C:/Users/Félix/Documents/GitHub/S4_APP1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1144.914 ; gain = 0.000
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jan 11 20:43:33 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log
+[Thu Jan 11 20:43:34 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Thu Jan 11 20:44:54 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Thu Jan 11 20:46:47 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log
+[Thu Jan 11 20:46:47 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/runme.log

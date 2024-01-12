@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/AppCombi_top.tcl"
+  variable script "D:/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/AppCombi_top.tcl"
   variable category "vivado_synth"
 }
 
@@ -71,14 +71,15 @@ proc create_report { reportName command } {
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.cache/wt [current_project]
-set_property parent.project_path C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.xpr [current_project]
+set_property webtalk.parent_dir D:/GitHub/S4_APP1/pb_APP_log_comb.cache/wt [current_project]
+set_property parent.project_path D:/GitHub/S4_APP1/pb_APP_log_comb.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:zybo-z7-10:part0:1.0 [current_project]
@@ -87,25 +88,25 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -vhdl2008 -library xil_defaultlib {
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_refreshPmod.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/synchro_module_v2.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd
 }
 read_vhdl -library xil_defaultlib {
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_12bits.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd
-  C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_parite.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_MUX.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_12bits.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -116,8 +117,8 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc
-set_property used_in_implementation false [get_files C:/Users/Félix/Documents/GitHub/S4_APP1/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]
+read_xdc D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc
+set_property used_in_implementation false [get_files D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/constrs_1/imports/contraintes/AppCombi_top.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

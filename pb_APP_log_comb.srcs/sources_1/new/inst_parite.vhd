@@ -42,7 +42,7 @@ architecture Behavioral of Parite is
     signal parite_temp : STD_LOGIC;
     
 begin
-    process(S1, ADCbin)
+    process(S1, ADCbin, parite_temp)
     begin
         case ADCbin is
             when "0000" => parite_temp <= '0';
