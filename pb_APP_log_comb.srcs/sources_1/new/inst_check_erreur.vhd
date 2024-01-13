@@ -33,16 +33,17 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity check_erreur is
      Port (
-            entree      : in std_logic_vector (3 downto 0);
+            entree      : in std_logic_vector (2 downto 0);
             sortie      : out std_logic  
            );
 end check_erreur;
 
 architecture Behavioral of check_erreur is
 
-signal IF_OK : std_logic := '0';
-
 begin
 
+sortie <= (entree(1) and (not entree(0))) or (entree(2) and (not entree(1)));
+
+-- C'B + AB'
 
 end Behavioral;

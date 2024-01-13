@@ -1,7 +1,4 @@
-Running: xsim.dir/Thermo2bin_behav/xsimk.exe -simmode gui -wdb Thermo2bin_behav.wdb -simrunnum 0 -socket 55661
+Running: xsim.dir/Thermo2bin_behav/xsimk.exe -simmode gui -wdb Thermo2bin_behav.wdb -simrunnum 0 -socket 53698
 Design successfully loaded
-Design Loading Memory Usage: 5964 KB (Peak: 5964 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-Simulation Memory Usage: 6472 KB (Peak: 6472 KB)
-Simulation CPU Usage: 108 ms
+Design Loading Memory Usage: 6000 KB (Peak: 6000 KB)
+Design Loading CPU Usage: 46 ms

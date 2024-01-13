@@ -20,6 +20,7 @@ vhdl xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd" \
 "../../../../pb_APP_log_comb.srcs/sources_1/new/inst_lecture2bin.vhd" \
 "../../../../pb_APP_log_comb.srcs/sources_1/new/inst_thermo2bin.vhd" \
+"../../../../pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd" \
 
 vhdl2008 xil_defaultlib  \
 "../../../../pb_APP_log_comb.srcs/sim_1/imports/verif/AppCombi_top_tb.vhd" \

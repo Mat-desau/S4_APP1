@@ -33,21 +33,32 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity Thermo2 is
     Port ( A : in STD_LOGIC_VECTOR (2 downto 0);
-           Erreur : out STD_LOGIC := '0';
-           Sortie : out STD_LOGIC_VECTOR (3 downto 0) := (others => '0')
+           Erreur : out STD_LOGIC;
+           Sortie : out STD_LOGIC_VECTOR (3 downto 0)
           );
           
 end Thermo2;
 
 architecture Behavioral of Thermo2 is
     signal temp, temp2 : STD_logic;
+    
+ component check_erreur is
+     Port (
+            entree      : in std_logic_vector (2 downto 0);
+            sortie      : out std_logic  
+           );
+end component;   
+    
 begin
 
+inst_check_erreur : check_erreur
+    port map(
+            entree => A,
+            sortie => Erreur
+            );
 
 Sortie(0) <= A(0) or (A(2) and A(1));
 Sortie(1) <= A(1);
-   
-Erreur <= (not A(2) and A(1)) or (A(0) and not A(1));
-    
+Sortie(3 downto 2) <= "00"; 
    
 end Behavioral;

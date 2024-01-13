@@ -4,4 +4,15 @@ Running: D:/xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 6e88f38826
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
-INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioral of entity xil_defaultlib.check_erreur [check_erreur_default]
+Compiling architecture behavioral of entity xil_defaultlib.Thermo2 [thermo2_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add1bit [add1bit_default]
+Compiling architecture behavioral of entity xil_defaultlib.Add4bits [add4bits_default]
+Compiling architecture behavioral of entity xil_defaultlib.thermo2bin
+Built simulation snapshot Thermo2bin_behav

@@ -53,10 +53,18 @@ component Add4bits is
            Sum_4 : out STD_LOGIC_VECTOR (3 downto 0);
            Cout_4 : out STD_LOGIC);
 end component; 
+
+component check_erreur is
+     Port (
+            entree      : in std_logic_vector (2 downto 0);
+            sortie      : out std_logic  
+           );
+end component;
     
     signal sum1, sum2 : Std_logic_vector (3 downto 0) := "0000";
     signal Rep1, Rep2, Rep3, Rep4 : std_logic_vector (3 downto 0) := "0000";
     signal Erreur_temp1, Erreur_temp2, Erreur_temp3, Erreur_temp4  : std_logic := '0';
+    signal Erreur_entre1, Erreur_entre2, Erreur_entre3 : std_logic := '0';
     
 begin
 
@@ -117,8 +125,27 @@ inst_Add4_3 : Add4bits
         Sum_4 => ADCbin,
         Cout_4 => open
         );
-        
-Erreur_thermo <= erreur_temp1 or erreur_temp2 or erreur_temp3 or erreur_temp4 ;
+-- 1  1  1  0  0  0  1  1  1  0  0  0 
+-- 11 10 9  8  7  6  5  4  3  2  1  0   
+inst_check1 : check_erreur
+    port map(
+             entree => ADCth (3 downto 1),
+             sortie => Erreur_entre1
+            );
+            
+inst_check2 : check_erreur
+    port map(
+             entree => ADCth (6 downto 4),
+             sortie => Erreur_entre2
+            );  
+            
+inst_check3 : check_erreur
+    port map(
+             entree => ADCth (9 downto 7),
+             sortie => Erreur_entre3
+            );            
+
+Erreur_thermo <= erreur_temp1 or erreur_temp2 or erreur_temp3 or erreur_temp4 or Erreur_entre1 or Erreur_entre2 or Erreur_entre3;
         
 
 
