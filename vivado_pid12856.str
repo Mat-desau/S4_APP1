@@ -1,0 +1,418 @@
+/*
+
+Xilinx Vivado v2020.2 (64-bit) [Major: 2020, Minor: 2]
+SW Build: 3064766 on Wed Nov 18 09:12:45 MST 2020
+IP Build: 3064653 on Wed Nov 18 14:17:31 MST 2020
+
+Process ID (PID): 12856
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Sat Jan 13 16:36:01 EST 2024
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1920x1080
+Screen resolution (DPI): 100
+Available screens: 2
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+Scale size: 12
+
+Java version: 	11.0.2 64-bit
+Java home: 	D:/xilinx/Vivado/2020.2/tps/win64/jre11.0.2
+Java executable location: 	D:/xilinx/Vivado/2020.2/tps/win64/jre11.0.2/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Félix
+User home directory: C:/Users/Félix
+User working directory: D:/GitHub/S4_APP1
+User country: 	CA
+User language: 	fr
+User locale: 	fr_CA
+
+RDI_BASEROOT: D:/xilinx/Vivado
+HDI_APPROOT: D:/xilinx/Vivado/2020.2
+RDI_DATADIR: D:/xilinx/Vivado/2020.2/data
+RDI_BINDIR: D:/xilinx/Vivado/2020.2/bin
+
+Vivado preferences file location: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/vivado.xml
+Vivado preferences directory: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/
+Vivado layouts directory: C:/Users/Félix/AppData/Roaming/Xilinx/Vivado/2020.2/data/layouts
+PlanAhead jar file location: 	D:/xilinx/Vivado/2020.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/GitHub/S4_APP1/vivado.log
+Vivado journal file location: 	D:/GitHub/S4_APP1/vivado.jou
+Engine tmp dir: 	D:/GitHub/S4_APP1/.Xil/Vivado-12856-DESKTOP-9AUGKDP
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_DSP: D:/xilinx/Vivado/2020.2/ids_lite/ISE
+XILINX_HLS: D:/xilinx/Vitis_HLS/2020.2
+XILINX_PLANAHEAD: D:/xilinx/Vivado/2020.2
+XILINX_SDK: D:/xilinx/Vitis/2020.2
+XILINX_VITIS: D:/xilinx/Vitis/2020.2
+XILINX_VIVADO: D:/xilinx/Vivado/2020.2
+XILINX_VIVADO_HLS: D:/xilinx/Vivado/2020.2
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,131 MB
+
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 68 MB (+69309kb) [00:00:09]
+// [Engine Memory]: 1,131 MB (+1034357kb) [00:00:09]
+// bz (cr):  Open Project : addNotify
+// Opening Vivado Project: D:\GitHub\S4_APP1\pb_APP_log_comb.xpr. Version: Vivado v2020.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,131 MB. GUI used memory: 52 MB. Current time: 1/13/24, 4:36:02 PM EST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 84 MB (+12928kb) [00:00:30]
+// [GUI Memory]: 106 MB (+18626kb) [00:00:31]
+// WARNING: HEventQueue.dispatchEvent() is taking  3434 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'. 
+// Project name: pb_APP_log_comb; location: D:/GitHub/S4_APP1; part: xc7z010clg400-1
+// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 1114.543 ; gain = 0.000 
+dismissDialog("Open Project"); // bz
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// [GUI Memory]: 122 MB (+10675kb) [00:00:37]
+// Elapsed time: 37 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 1, true); // D - Node
+// WARNING: HEventQueue.dispatchEvent() is taking  1049 ms.
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 1, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd)]", 1, true, false, false, false, false, true); // D - Double Click - Node
+selectCodeEditor("AppCombi_top.vhd", 216, 384); // bP
+selectCodeEditor("AppCombi_top.vhd", 146, 180); // bP
+typeControlKey((HResource) null, "AppCombi_top.vhd", 'c'); // bP
+selectCodeEditor("AppCombi_top.vhd", 214, 433); // bP
+typeControlKey((HResource) null, "AppCombi_top.vhd", 'v'); // bP
+selectCodeEditor("AppCombi_top.vhd", 215, 337); // bP
+typeControlKey((HResource) null, "AppCombi_top.vhd", 'v'); // bP
+selectCodeEditor("AppCombi_top.vhd", 215, 347); // bP
+typeControlKey((HResource) null, "AppCombi_top.vhd", 'v'); // bP
+selectCodeEditor("AppCombi_top.vhd", 220, 368); // bP
+selectCodeEditor("AppCombi_top.vhd", 225, 363); // bP
+typeControlKey((HResource) null, "AppCombi_top.vhd", 'v'); // bP
+selectCodeEditor("AppCombi_top.vhd", 399, 297); // bP
+// Elapsed time: 59 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd), inst_Thermo2Bin : Thermo2bin(Behavioral) (inst_thermo2bin.vhd)]", 2, true); // D - Node
+// [GUI Memory]: 133 MB (+5255kb) [00:02:49]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd), inst_Thermo2Bin : Thermo2bin(Behavioral) (inst_thermo2bin.vhd)]", 2, true, false, false, false, false, true); // D - Double Click - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd), inst_Thermo2Bin : Thermo2bin(Behavioral) (inst_thermo2bin.vhd), inst_Thermo2_1 : Thermo2(Behavioral) (inst_lecture2bin.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd), inst_Thermo2Bin : Thermo2bin(Behavioral) (inst_thermo2bin.vhd), inst_Thermo2_1 : Thermo2(Behavioral) (inst_lecture2bin.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+selectCodeEditor("inst_lecture2bin.vhd", 38, 251); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 1, 246); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 16, 233); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 418, 213); // bP
+// Elapsed time: 27 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 512, 359); // bP
+// Elapsed time: 15 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 136, 385); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_thermo2bin.vhd", 2); // m
+// Elapsed time: 78 seconds
+selectCodeEditor("inst_thermo2bin.vhd", 524, 285); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 3); // m
+// Elapsed time: 145 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 339, 101); // bP
+// Elapsed time: 97 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 392, 175); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AppCombi_top.vhd", 1); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 12 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// TclEventType: DG_GRAPH_STALE
+// Elapsed time: 745 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 266, 414); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 251, 399); // bP
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // E
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cr): Add Sources: addNotify
+selectButton("NEXT", "Next >"); // JButton
+selectButton(PAResourceQtoS.SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE, "Add"); // E
+selectMenuItem(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File..."); // ak
+// F (c): Create Source File: addNotify
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "inst_check_erreur"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+dismissDialog("Create Source File"); // F
+selectButton("FINISH", "Finish"); // JButton
+// 'g' command handler elapsed time: 12 seconds
+dismissDialog("Add Sources"); // c
+// Tcl Message: close [ open D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd 
+// I (cr): Define Module: addNotify
+// Elapsed time: 13 seconds
+setText(PAResourceAtoD.DefineModulesDialog_ENTITY_NAME, "check_erreur"); // aa
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a
+// TclEventType: FILE_SET_CHANGE
+selectButton("OptionPane.button", "Yes"); // JButton
+dismissDialog("Define Module"); // I
+// [GUI Memory]: 141 MB (+1290kb) [00:22:49]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, check_erreur(Behavioral) (inst_check_erreur.vhd)]", 17, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, check_erreur(Behavioral) (inst_check_erreur.vhd)]", 17, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd), inst_Thermo2Bin : Thermo2bin(Behavioral) (inst_thermo2bin.vhd), inst_Thermo2_1 : Thermo2(Behavioral) (inst_lecture2bin.vhd)]", 3, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, AppCombi_top(BEHAVIORAL) (AppCombi_top.vhd), inst_Thermo2Bin : Thermo2bin(Behavioral) (inst_thermo2bin.vhd), inst_Thermo2_1 : Thermo2(Behavioral) (inst_lecture2bin.vhd)]", 3, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 174 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 243, 247); // bP
+// Elapsed time: 16 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AppCombi_top.vhd", 3); // m
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// Elapsed time: 19 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AppCombi_top.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectCodeEditor("inst_check_erreur.vhd", 23, 352); // bP
+selectCodeEditor("inst_check_erreur.vhd", 21, 353); // bP
+selectCodeEditor("inst_check_erreur.vhd", 77, 351); // bP
+selectCodeEditor("inst_check_erreur.vhd", 86, 347); // bP
+selectCodeEditor("inst_check_erreur.vhd", 88, 383); // bP
+selectCodeEditor("inst_check_erreur.vhd", 84, 371); // bP
+selectCodeEditor("inst_check_erreur.vhd", 94, 365); // bP
+// Elapsed time: 53 seconds
+selectCodeEditor("inst_check_erreur.vhd", 321, 391); // bP
+selectCodeEditor("inst_check_erreur.vhd", 293, 387); // bP
+selectCodeEditor("inst_check_erreur.vhd", 74, 412); // bP
+selectCodeEditor("inst_check_erreur.vhd", 244, 382); // bP
+selectCodeEditor("inst_check_erreur.vhd", 71, 397); // bP
+selectCodeEditor("inst_check_erreur.vhd", 424, 398); // bP
+selectCodeEditor("inst_check_erreur.vhd", 48, 440); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AppCombi_top.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 36 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// Elapsed time: 27 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 265, 162); // bP
+typeControlKey((HResource) null, "inst_lecture2bin.vhd", 'c'); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectCodeEditor("inst_check_erreur.vhd", 314, 396); // bP
+typeControlKey((HResource) null, "inst_check_erreur.vhd", 'v'); // bP
+selectCodeEditor("inst_check_erreur.vhd", 4, 432); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectCodeEditor("inst_check_erreur.vhd", 222, 432); // bP
+selectCodeEditor("inst_check_erreur.vhd", 241, 479); // bP
+// HMemoryUtils.trashcanNow. Engine heap size: 1,131 MB. GUI used memory: 81 MB. Current time: 1/13/24, 5:06:02 PM EST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 32 seconds
+selectCodeEditor("inst_check_erreur.vhd", 547, 197); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_thermo2bin.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectCodeEditor("inst_lecture2bin.vhd", 340, 229); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 30, 247); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 259, 300); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 34, 336); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 432, 328); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 415, 343); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectCodeEditor("inst_lecture2bin.vhd", 209, 357); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 32, 249); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 31, 249, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("inst_lecture2bin.vhd", 186, 290); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 27, 330); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 398, 334); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 227, 378); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 31, 373); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 160, 391); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 144, 331); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 204, 332); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 279, 332); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 366, 331); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 280, 391); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 23, 365); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 163, 385); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 59, 416); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 18, 434); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 69, 162); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_thermo2bin.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "AppCombi_top.vhd", 3); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// Elapsed time: 15 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 97, 430); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 88, 427); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 85, 427, false, false, false, false, true); // bP - Double Click
+selectCodeEditor("inst_lecture2bin.vhd", 26, 374); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 18, 369); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 67, 330); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 233, 386); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectCodeEditor("inst_lecture2bin.vhd", 130, 279); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 129, 296); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 189, 289); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 274, 245); // bP
+// Run Command: RDIResourceCommand.RDICommands_UNSELECT_ALL
+selectCodeEditor("inst_lecture2bin.vhd", 94, 284); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 25, 284); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 72, 297); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 87, 434); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 22, 312); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 17, 317); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 21, 319); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 27, 319); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 31, 325); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 30, 347); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 29, 381); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 265, 341); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 42, 334); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 274, 212); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 283, 213); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 374, 211); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 471, 212); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 473, 212); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 493, 213); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 517, 213); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 630, 242); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 512, 211); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 567, 271); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 374, 263); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 433, 172); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 466, 214); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 480, 261); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 118, 242); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 531, 221); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 499, 214); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 502, 213); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 455, 260); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 75, 228); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 239, 267); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 99, 253); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 89, 217); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_check_erreur.vhd", 4); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectCodeEditor("inst_lecture2bin.vhd", 124, 405); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 379, 294); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 276, 241); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 76, 163); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_thermo2bin.vhd", 1); // m
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_thermo2bin.vhd", 1); // m
+// Elapsed time: 12 seconds
+selectCodeEditor("inst_thermo2bin.vhd", 78, 421); // bP
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_lecture2bin.vhd", 2); // m
+selectCodeEditor("inst_lecture2bin.vhd", 229, 276); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 231, 247); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("inst_lecture2bin.vhd", 72, 229); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 71, 439); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 476, 321); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 59, 388); // bP
+selectCodeEditor("inst_lecture2bin.vhd", 55, 401); // bP
+// Elapsed time: 17 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "inst_thermo2bin.vhd", 1); // m
+selectCodeEditor("inst_thermo2bin.vhd", 405, 183); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 255, 250); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 38, 175); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 78, 212); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 594, 213); // bP
+// Elapsed time: 17 seconds
+selectCodeEditor("inst_thermo2bin.vhd", 73, 93); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 289, 94); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 281, 42); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 608, 416); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 637, 414); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 35, 280); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 73, 266); // bP
+// Elapsed time: 11 seconds
+selectCodeEditor("inst_thermo2bin.vhd", 84, 233); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 86, 245); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 232, 286); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 11, 304); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 39, 314); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 33, 323); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 11, 394); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 37, 372); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 80, 363); // bP
+// Elapsed time: 13 seconds
+selectCodeEditor("inst_thermo2bin.vhd", 50, 332); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 215, 320); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 151, 317); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 64, 318); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 130, 397); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 753, 296); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 105, 297); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 96, 297); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 228, 349); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 746, 292); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 716, 366); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 18, 345); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 41, 331); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 209, 301); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 218, 298); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 379, 296); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 250, 298); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 360, 298); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 487, 295); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 606, 297); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 620, 356); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 385, 295); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 330, 295); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 449, 294); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 327, 301); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 209, 300); // bP
+selectCodeEditor("inst_thermo2bin.vhd", 280, 338); // bP
+// Elapsed time: 150 seconds
+selectCodeEditor("inst_thermo2bin.vhd", 305, 195); // bP
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

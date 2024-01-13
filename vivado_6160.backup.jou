@@ -1,0 +1,276 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 12 18:57:16 2024
+# Process ID: 6160
+# Current directory: D:/GitHub/S4_APP1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6140 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Log file: D:/GitHub/S4_APP1/vivado.log
+# Journal file: D:/GitHub/S4_APP1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source AppCombi_top_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Thermo2bin [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2bin.tcl
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/ADCth}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_temp}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/ADCbin}} 
+add_force {/Thermo2bin/ADCth[0]} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 10 us
+relaunch_sim
+add_force {/Thermo2bin/ADCth[0]} -radix hex {0 0ns} {1 50000ps} -repeat_every 100000ps
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2bin.tcl
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/ADCth}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/ADCbin}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_thermo}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_temp}} 
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {5 0ns}
+run 100 ns
+relaunch_sim
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_temp1}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_temp2}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_temp3}} 
+current_wave_config {AppCombi_top_tb_behav.wcfg}
+add_wave {{/Thermo2bin/Erreur_temp4}} 
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {3 0ns}
+run 100 ns
+save_wave_config {D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2bin.tcl
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {10 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {11 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix bin {12 0ns}
+add_force {/Thermo2bin/ADCth} -radix hex {12 0ns}
+add_force {/Thermo2bin/ADCth} -radix hex {12 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {23 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {145 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {12 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {24 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+step
+step
+step
+step
+step
+step
+close_sim
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2bin.tcl
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {63 0ns}
+run 100 ns
+close_sim
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2bin.tcl
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix hex {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {63 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix bin {111111111111 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix bin {011111111111 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix bin {000011111111 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {7 0ns} -cancel_after 0
+add_force {/Thermo2bin/ADCth} -radix unsigned {7 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {63 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {7 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix bin {000000011111 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth[5]} -radix bin {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth[6]} -radix bin {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth[7]} -radix bin {1 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix hex {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {63 0ns}
+run 100 ns
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_bp {D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_lecture2bin.vhd} 48
+remove_bps -file {D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_lecture2bin.vhd} -line 48
+add_bp {D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_lecture2bin.vhd} 46
+remove_bps -BreakPointObjsOrIds bp2 
+save_wave_config {D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2bin.tcl
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {63 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {2 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+relaunch_sim
+add_force {/Thermo2bin/ADCth} -radix unsigned {1 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {3 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix bin {000000001111 0ns}
+run 100 ns
+add_force {/Thermo2bin/ADCth} -radix unsigned {63 0ns}
+run 100 ns
+close_sim

@@ -167,7 +167,7 @@ begin
     
     inst_Bin2DualBCD : Bin2DualBCD
         Port map(
-                ADCbin => d_opa,
+                ADCbin => ADCbin_Fait,
                 Dizaines => dizaine,
                 Unites_ns => unites_ns,
                 Code_signe => code_Signe,
@@ -182,14 +182,14 @@ begin
                 
    inst_2_3 : Fct2_3
         Port map(
-                ADCbin => d_opa,
+                ADCbin => ADCbin_Fait,
                 A2_3 => a2_3
                 );   
                  
    inst_parite : Parite
         Port map(
                 S1 => i_S1,
-                ADCbin => d_opa,
+                ADCbin => ADCbin_Fait,
                 parite => o_DEL2
                 ); 
                  
@@ -199,7 +199,7 @@ begin
                  Unites_ns => unites_ns,
                  Code_signe => code_signe,
                  Unites_s => unites_s,
-                 ADCbin => d_opa,
+                 ADCbin => ADCbin_Fait,
                  erreur => erreur,
                  BTN => i_btn(1 downto 0),
                  S2 => i_S2,

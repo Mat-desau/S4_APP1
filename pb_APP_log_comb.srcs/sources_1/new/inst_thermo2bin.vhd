@@ -118,15 +118,8 @@ inst_Add4_3 : Add4bits
         Cout_4 => open
         );
         
-process (erreur_temp1, erreur_temp2, erreur_temp3, erreur_temp4)
-    begin
-    if erreur_temp1 = '1' or erreur_temp2 = '1' or erreur_temp3 = '1' or erreur_temp4 = '1' then
-        Erreur_thermo <= '1';
-     else
-        Erreur_thermo <= '0';
-     end if;
-    end process;
-    
+Erreur_thermo <= erreur_temp1 or erreur_temp2 or erreur_temp3 or erreur_temp4 ;
+        
 
 
 end Behavioral;
