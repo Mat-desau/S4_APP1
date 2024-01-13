@@ -1,7 +1,0 @@
-Running: xsim.dir/Fct2_3_behav/xsimk.exe -simmode gui -wdb Fct2_3_behav.wdb -simrunnum 0 -socket 63399
-Design successfully loaded
-Design Loading Memory Usage: 7268 KB (Peak: 7268 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 7792 KB (Peak: 7792 KB)
-Simulation CPU Usage: 62 ms

@@ -27,8 +27,9 @@ use UNISIM.Vcomponents.ALL;
 
 entity AppCombi_top is
   port ( 
-          i_S1        : in    std_logic;
-          i_S2        : in    std_logic;
+          i_ADC_th    : in    std_logic_vector (11 downto 0) := "000000000000";
+          i_S1        : in    std_logic := '0';
+          i_S2        : in    std_logic := '0';
           i_btn       : in    std_logic_vector (3 downto 0); -- Boutons de la carte Zybo
           i_sw        : in    std_logic_vector (3 downto 0); -- Interrupteurs de la carte Zybo
           sysclk      : in    std_logic;                     -- horloge systeme
@@ -64,6 +65,12 @@ architecture BEHAVIORAL of AppCombi_top is
    signal code_signe        : std_logic_vector (3 downto 0);
    signal unites_s          : std_logic_vector (3 downto 0);
    signal erreur            : std_logic;
+   signal ADCbin_Fait       : std_logic_vector (3 downto 0);
+   
+   component Thermo2bin is
+    Port ( ADCth : in STD_LOGIC_VECTOR (11 downto 0);
+           ADCbin : out STD_LOGIC_VECTOR (3 downto 0));
+    end component;
    
    component synchro_module_v2 is
    generic (const_CLK_syst_MHz: integer := freq_sys_MHz);
@@ -132,7 +139,14 @@ architecture BEHAVIORAL of AppCombi_top is
     end component;
     
 begin
-  
+    
+    inst_Thermo2Bin : Thermo2bin
+        Port map ( 
+            ADCth => i_ADC_th,
+            ADCbin => ADCbin_Fait
+           );
+    
+    
     inst_synch : synchro_module_v2
      generic map (const_CLK_syst_MHz => freq_sys_MHz)
          port map (

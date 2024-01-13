@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Jan 12 18:55:06 2024
+# Process ID: 11100
+# Current directory: D:/GitHub/S4_APP1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent16788 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Log file: D:/GitHub/S4_APP1/vivado.log
+# Journal file: D:/GitHub/S4_APP1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr
+launch_simulation
