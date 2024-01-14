@@ -1,7 +1,7 @@
 Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
-| Date         : Thu Jan 11 21:35:31 2024
+| Date         : Sun Jan 14 15:04:24 2024
 | Host         : DESKTOP-9AUGKDP running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file AppCombi_top_control_sets_placed.rpt
 | Design       : AppCombi_top
@@ -61,7 +61,7 @@ Table of Contents
 | No           | No                    | No                     |               2 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |              21 |            5 |
-| Yes          | No                    | No                     |               7 |            1 |
+| Yes          | No                    | No                     |               7 |            4 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -76,7 +76,7 @@ Table of Contents
 |  inst_synch/clk_5MHz |                             |                             |                1 |              1 |         1.00 |
 |  sysclk_IBUF_BUFG    |                             |                             |                1 |              1 |         1.00 |
 |  sysclk_IBUF_BUFG    |                             | inst_synch/eqOp__0          |                1 |              5 |         5.00 |
-|  inst_synch/clk_5MHz | inst_aff/inst_refresh/clear |                             |                1 |              7 |         7.00 |
+|  inst_synch/clk_5MHz | inst_aff/inst_refresh/clear |                             |                4 |              7 |         1.75 |
 |  inst_synch/clk_5MHz |                             | inst_aff/inst_refresh/clear |                4 |             16 |         4.00 |
 +----------------------+-----------------------------+-----------------------------+------------------+----------------+--------------+
 

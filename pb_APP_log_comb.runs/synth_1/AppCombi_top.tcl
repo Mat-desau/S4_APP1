@@ -104,9 +104,11 @@ read_vhdl -library xil_defaultlib {
   D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd
   D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd
   D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_Bin2DualBCD.vhd
-  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_12bits.vhd
   D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd
   D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_2_3.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_lecture2bin.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_thermo2bin.vhd
+  D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being

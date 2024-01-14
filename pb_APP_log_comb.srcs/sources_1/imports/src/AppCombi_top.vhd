@@ -64,12 +64,14 @@ architecture BEHAVIORAL of AppCombi_top is
    signal unites_ns         : std_logic_vector (3 downto 0);
    signal code_signe        : std_logic_vector (3 downto 0);
    signal unites_s          : std_logic_vector (3 downto 0);
-   signal erreur            : std_logic;
+   signal erreur_temp       : std_logic;
    signal ADCbin_Fait       : std_logic_vector (3 downto 0);
    
    component Thermo2bin is
     Port ( ADCth : in STD_LOGIC_VECTOR (11 downto 0);
-           ADCbin : out STD_LOGIC_VECTOR (3 downto 0));
+           ADCbin : out STD_LOGIC_VECTOR (3 downto 0);
+           Erreur_thermo : out STD_LOGIC
+          );
     end component;
    
    component synchro_module_v2 is
@@ -143,7 +145,8 @@ begin
     inst_Thermo2Bin : Thermo2bin
         Port map ( 
             ADCth => i_ADC_th,
-            ADCbin => ADCbin_Fait
+            ADCbin => ADCbin_Fait,
+            Erreur_thermo => erreur_temp
            );
     
     
@@ -200,7 +203,7 @@ begin
                  Code_signe => code_signe,
                  Unites_s => unites_s,
                  ADCbin => ADCbin_Fait,
-                 erreur => erreur,
+                 erreur => erreur_temp,
                  BTN => i_btn(1 downto 0),
                  S2 => i_S2,
                  DAFF0 => d_AFF0, 

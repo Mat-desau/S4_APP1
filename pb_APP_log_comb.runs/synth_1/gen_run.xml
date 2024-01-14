@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1705026862">
+<GenRun Id="synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1705262594">
   <File Type="PA-TCL" Name="AppCombi_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="AppCombi_top_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="AppCombi_top_reports.tcl"/>
   <File Type="RDS-RDS" Name="AppCombi_top.vds"/>
   <File Type="RDS-UTIL" Name="AppCombi_top_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="AppCombi_top_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="AppCombi_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="AppCombi_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="AppCombi_top_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/src/septSegments_encodeur.vhd">
@@ -102,12 +105,6 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/new/inst_12bits.vhd">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PSRCDIR/sources_1/new/inst_add8bits.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -115,6 +112,24 @@
       </FileInfo>
     </File>
     <File Path="$PSRCDIR/sources_1/new/inst_2_3.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_lecture2bin.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_thermo2bin.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/inst_check_erreur.vhd">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
