@@ -3,7 +3,7 @@
 Nov 18 2020
 09:47:47
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/imports/verif/AppCombi_top_tb.vhd,1705024759,vhdl2008,,,,appcombi_top_tb,,,,,,,,
-D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/new/Thermo2Bin_TB.vhd,1705190123,vhdl,,,,thermo2bin_tb,,,,,,,,
+D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/new/Thermo2Bin_TB.vhd,1705201697,vhdl,,,,thermo2bin_tb,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/AppCombi_top.vhd,1705182330,vhdl2008,,,,appcombi_top,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_Top.vhd,1705024759,vhdl2008,,,,septsegments_top,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/imports/src/septSegments_encodeur.vhd,1705024759,vhdl2008,,,,septsegments_encodeur,,,,,,,,
@@ -17,7 +17,7 @@ D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add8bits.vhd,170502475
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_add_4bits.vhd,1705024759,vhdl,,,,add4bits,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_ns.vhd,1705024759,vhdl,,,,bin2dualbcd_ns,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_bin_s.vhd,1705024759,vhdl,,,,bin2dualbcd_s,,,,,,,,
-D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd,1705187526,vhdl,,,,check_erreur,,,,,,,,
+D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd,1705200740,vhdl,,,,check_erreur,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_deco.vhd,1705024759,vhdl,,,,decodeur3_8,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_lecture2bin.vhd,1705191333,vhdl,,,,thermo2,,,,,,,,
 D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_moins5.vhd,1705024759,vhdl,,,,moins_5,,,,,,,,

@@ -44,6 +44,6 @@ begin
 
 sortie <= (entree(1) and (not entree(0))) or (entree(2) and (not entree(1)));
 
--- C'B + AB'
+-- BA' + CB'
 
 end Behavioral;

@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Sat Jan 13 18:51:39 2024
-# Process ID: 17976
+# Start of session at: Sat Jan 13 21:44:26 2024
+# Process ID: 6640
 # Current directory: D:/GitHub/S4_APP1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18040 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17736 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
 # Log file: D:/GitHub/S4_APP1/vivado.log
 # Journal file: D:/GitHub/S4_APP1\vivado.jou
 #-----------------------------------------------------------
@@ -14,19 +14,6 @@ open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr
 launch_simulation
 open_wave_config D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/imports/S4_APP1/AppCombi_top_tb_behav.wcfg
 source Thermo2Bin_TB.tcl
-current_wave_config {AppCombi_top_tb_behav.wcfg}
-add_wave {{/Thermo2Bin_TB/vecteur_Entree_sim}} 
-current_wave_config {AppCombi_top_tb_behav.wcfg}
-add_wave {{/Thermo2Bin_TB/vecteur_test_sim}} 
-current_wave_config {AppCombi_top_tb_behav.wcfg}
-add_wave {{/Thermo2Bin_TB/vecteur_ADC_sim}} 
-current_wave_config {AppCombi_top_tb_behav.wcfg}
-add_wave {{/Thermo2Bin_TB/vecteur_Erreur_sim}} 
-run 200 ns
-relaunch_sim
 run 1200 ns
-relaunch_sim
-run 1200 ns
-save_wave_config {D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/imports/S4_APP1/AppCombi_top_tb_behav.wcfg}
 save_wave_config {D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/imports/S4_APP1/AppCombi_top_tb_behav.wcfg}
 close_sim
