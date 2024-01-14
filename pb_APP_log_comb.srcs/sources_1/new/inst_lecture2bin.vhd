@@ -57,7 +57,8 @@ inst_check_erreur : check_erreur
             sortie => Erreur
             );
 
-Sortie(0) <= A(0) or (A(2) and A(1));
+-- Sortie(0) <= A(0) or (A(2) and A(1));
+Sortie(0) <= A(0) xor (A(1) xor A(2));
 Sortie(1) <= A(1);
 Sortie(3 downto 2) <= "00"; 
    
