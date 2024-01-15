@@ -1,4 +1,0 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sources_1/new/inst_check_erreur.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'check_erreur'
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/new/Thermo2Bin_TB.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'Thermo2Bin_TB'

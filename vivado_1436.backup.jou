@@ -2,10 +2,10 @@
 # Vivado v2020.2 (64-bit)
 # SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
 # IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
-# Start of session at: Mon Jan 15 14:53:27 2024
-# Process ID: 3644
+# Start of session at: Mon Jan 15 14:29:36 2024
+# Process ID: 1436
 # Current directory: D:/GitHub/S4_APP1
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent17924 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13456 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
 # Log file: D:/GitHub/S4_APP1/vivado.log
 # Journal file: D:/GitHub/S4_APP1\vivado.jou
 #-----------------------------------------------------------
@@ -13,12 +13,12 @@ start_gui
 open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
-set_property top AppCombi_top [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode DisplayOnly [current_project]
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top AppCombi_top_tb [get_filesets sim_1]
+set_property top Thermo2Bin_TB [get_filesets sim_1]
 set_property top_lib xil_defaultlib [get_filesets sim_1]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode DisplayOnly [current_project]
+launch_simulation
+open_wave_config D:/GitHub/S4_APP1/pb_APP_log_comb.srcs/sim_1/imports/S4_APP1/AppCombi_top_tb_behav.wcfg
+source Thermo2Bin_TB.tcl
+run 10 us
+close_sim

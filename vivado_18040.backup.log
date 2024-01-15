@@ -1,0 +1,89 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jan 14 14:33:13 2024
+# Process ID: 18040
+# Current directory: D:/GitHub/S4_APP1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14180 D:\GitHub\S4_APP1\pb_APP_log_comb.xpr
+# Log file: D:/GitHub/S4_APP1/vivado.log
+# Journal file: D:/GitHub/S4_APP1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/GitHub/S4_APP1/pb_APP_log_comb.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/GitHub/S4_APP1/pb_APP_log_comb.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 1129.492 ; gain = 0.000
+set_property top AppCombi_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sun Jan 14 14:44:07 2024] Launched synth_1...
+Run output will be captured here: D:/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log
+[Sun Jan 14 14:44:07 2024] Launched impl_1...
+Run output will be captured here: D:/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 1129.492 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A77C84A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 2633.949 ; gain = 1504.457
+set_property PROGRAM.FILE {D:/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/AppCombi_top.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/AppCombi_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Sun Jan 14 15:03:14 2024] Launched synth_1...
+Run output will be captured here: D:/GitHub/S4_APP1/pb_APP_log_comb.runs/synth_1/runme.log
+[Sun Jan 14 15:03:14 2024] Launched impl_1...
+Run output will be captured here: D:/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {D:/GitHub/S4_APP1/pb_APP_log_comb.runs/impl_1/AppCombi_top.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210351A77C84A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210351A77C84A
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Jan 14 16:07:08 2024...
